@@ -1,3 +1,42 @@
+/* -------------------- */
+/* Reset */
+/* -------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* -------------------- */
+/* Main Background */
+/* -------------------- */
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url("./assets/login-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+/* -------------------- */
+/* Login Card */
+/* -------------------- */
+
 .login {
   width: 100%;
   max-width: 400px;
@@ -17,6 +56,11 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+
+/* -------------------- */
+/* College Logo */
+/* -------------------- */
+
 .college-logo {
   width: 100px;
   height: 100px;
@@ -26,6 +70,11 @@
   margin-bottom: 5px;
 }
 
+
+/* -------------------- */
+/* Heading */
+/* -------------------- */
+
 .login h1 {
   font-size: 30px;
   font-weight: 700;
@@ -33,4 +82,180 @@
   color: #0d0b26;
 
   margin-bottom: 15px;
+}
+
+
+/* -------------------- */
+/* Google Login */
+/* -------------------- */
+
+.google-login {
+  width: 100%;
+  height: 52px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.google-login:hover {
+  background-color: #f7f7f7;
+}
+
+
+/* Google Logo */
+
+.google-login img {
+  width: 22px;
+  height: 22px;
+
+  position: absolute;
+  left: 16px;
+
+  object-fit: contain;
+}
+
+
+/* Google Text */
+
+.google-login span {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #333;
+}
+
+
+/* -------------------- */
+/* OR Divider */
+/* -------------------- */
+
+.divider {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 5px 0;
+}
+
+.divider span {
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* -------------------- */
+/* Username Input */
+/* -------------------- */
+
+.login input {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 20px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #333;
+}
+
+.login input::placeholder {
+  color: #999;
+}
+
+.login input:focus {
+  border-color: #0d0b26;
+}
+
+
+/* -------------------- */
+/* Continue Button */
+/* -------------------- */
+
+.login-button {
+  width: 100%;
+  height: 58px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-color: #0d0b26;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.2s,
+              background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #17143a;
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+
+/* -------------------- */
+/* Mobile */
+/* -------------------- */
+
+@media (max-width: 480px) {
+
+  .main {
+    padding: 15px;
+  }
+
+  .login {
+    max-width: 100%;
+
+    padding: 30px 20px;
+
+    border-radius: 16px;
+  }
+
+  .college-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .login h1 {
+    font-size: 26px;
+  }
+
+  .google-login {
+    height: 50px;
+  }
+
+  .login input {
+    height: 54px;
+  }
+
+  .login-button {
+    height: 54px;
+  }
 }
