@@ -1,0 +1,36 @@
+.login {
+  width: 100%;
+  max-width: 400px;
+
+  background-color: white;
+
+  padding: 35px 30px;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.college-logo {
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+
+  margin-bottom: 5px;
+}
+
+.login h1 {
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #0d0b26;
+
+  margin-bottom: 15px;
+}
