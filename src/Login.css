@@ -1,24 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main {
+.login {
   width: 100%;
-  min-height: 100vh;
+  max-width: 400px;
 
-  background-image: url("./assets/login-background.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: white;
 
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: darken;
+  padding: 35px 30px;
+
+  border-radius: 20px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
-  padding: 20px;
+  gap: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.college-logo {
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+
+  margin-bottom: 5px;
+}
+
+.login h1 {
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #0d0b26;
+
+  margin-bottom: 15px;
 }
